@@ -6,7 +6,5 @@ services:
       dockerfile: Dockerfile   
     ports:
       - "80:80"
-    environment:
-      - URL=https://www.booli.se
     volumes:
       - ./code:/app/code
