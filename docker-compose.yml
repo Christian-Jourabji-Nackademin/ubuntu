@@ -1,17 +1,14 @@
-version: "3.9"
-    
+version: '3'
 services:
   db:
     image: mysql
-    command: --default-authentication-plugin=mysql_native_password
+    container_name: db
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ocn217
-      MYSQL_DATABASE: ubuntu
-      MYSQL_PASSWORD: ocn217
+      MYSQL_DATABASE: caliente
       MYSQL_USER: chris
+      MYSQL_PASSWORD: ocn217
+    command: --default-authentication-plugin=mysql_native_password
     volumes:
-      - my-db:/var/lib/mysql
-# Names our volume
-volumes:
-  my-db:
+       - ./seed:/docker-entrypoint-initdb.d
