@@ -5,6 +5,7 @@ services:
     container_name: db
     restart: always
     environment:
+      MYSQL_host: db
       MYSQL_ROOT_PASSWORD: docker
       MYSQL_DATABASE: caliente
       MYSQL_USER: chris
