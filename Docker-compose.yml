@@ -4,8 +4,6 @@ services:
     image: mysql
     container_name: db
     restart: always
-    ports: 
-      - 
     environment:
       MYSQL_HOST: "127.0.0.1"
       MYSQL_ROOT_PASSWORD: dockers
