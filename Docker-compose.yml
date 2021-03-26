@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       MYSQL_HOST: "127.0.0.1"
-      MYSQL_ROOT_PASSWORD: docker
+      MYSQL_ROOT_PASSWORD: dockers
       MYSQL_DATABASE: caliente
       MYSQL_USER: chris
       MYSQL_PASSWORD: docker
