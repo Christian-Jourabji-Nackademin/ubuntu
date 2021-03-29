@@ -8,4 +8,4 @@ WORKDIR /app/code
 RUN apt-get update \
     && apt-get install -y default-mysql-client -y postgresql-client -y mongodb-clients -y telnet -y curl -y wget
 
-CMD mysql -uchris -p -P3307
+CMD mysql -uchris -pdocker "show databases;"
