@@ -5,11 +5,11 @@ services:
     container_name: db
     restart: always
     environment:
-      MYSQL_HOST: "127.0.0.1"
-      MYSQL_ROOT_PASSWORD: dockers
-      MYSQL_DATABASE: caliente
-      MYSQL_USER: chris
-      MYSQL_PASSWORD: docker
+      - MYSQL_HOST=127.0.0.1
+      - MYSQL_ROOT_PASSWORD=dockers
+      - MYSQL_DATABASE=caliente
+      - MYSQL_USER=chris
+      - MYSQL_PASSWORD=docker
     ports: 
       - 3307:3306
     command: --default-authentication-plugin=mysql_native_password
